@@ -629,6 +629,12 @@ body {
   color: var(--accent-color);
 }
 
+/*тень кнопки закрытия при фокусе*/
+.button-close:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--accent-color);
+}
+
 /*форма в модальном окне*/
 .form {
   margin-right: 40px;
@@ -654,7 +660,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .form-field {
@@ -674,6 +680,11 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.comment:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
 }
 
 .policy {
@@ -710,11 +721,42 @@ body {
   padding-top: 11px;
   padding-bottom: 11px;
   padding-right: 12px;
-  padding-left: 12px;
+  padding-left: 42px;
 
-  box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.form-input:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+}
+
+/*изменение цвета иконки при фокусе input*/
+.form-input:focus ~ .form-icon {
+  color: var(--accent-color);
+}
+
+.form-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+
+  width: 18px;
+  height: 18px;
+
+  color: var(--primary-text-color);
+  fill: currentColor;
+
+  transform: translateY(-50%);
+}
+
+.form-wrapper {
+  position: relative;
+}
+
+.form-wrapper input {
+  width: 100%;
 }
 
 /*не разрешает пользователю менять размер окна для сообщения*/
@@ -861,7 +903,7 @@ body {
   color: var(--accent-color);
 }
 
-/*--ПОДПИСЫВАЙТЕСЬ--*/
+/*--ФОРМА:ПОДПИСЫВАЙТЕСЬ--*/
 .footer-sign {
   display: flex;
   flex-direction: column;
@@ -909,13 +951,11 @@ body {
 .footer-form-button {
   display: block;
 
-  border-radius: 4px;
-  border-width: 0;
-  padding: 10px 28px;
+  padding: 0;
+  padding-left: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   min-width: 200px;
-
-  color: var(--white-color);
-  background-color: var(--accent-color);
 
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -923,7 +963,20 @@ body {
   line-height: 1.875;
   letter-spacing: 0.06em;
 
-  text-align: center;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border-width: 0;
+}
+
+.footer-button-wrapper {
+  position: relative;
+}
+
+.footer-form-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*позиционирование контента футера*/

@@ -329,22 +329,37 @@
                     <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
                     <div class="form-field">
                         <label for="name" class="form-label">Имя</label>
-                        <input type="text" name="user-name" id="name" class="form-input">
+                        <div class="form-wrapper">
+                            <input type="text" name="user-name" id="name" class="form-input">
+                            <svg class="form-icon" width="12px" height="12px">
+                                <use href="./images/icons.svg#icon-person-black"></use>
+                            </svg>
+                        </div>
                     </div>
                     <div class="form-field">
                         <label for="tel" class="form-label">Телефон</label>
-                        <input type="tel" name="tel" id="tel" class="form-input">
+                        <div class="form-wrapper">
+                            <input type="tel" name="tel" id="tel" class="form-input">
+                            <svg class="form-icon" width="12px" height="12px">
+                                <use href="./images/icons.svg#icon-phone-black"></use>
+                            </svg>
+                        </div>
                     </div>
                     <div class="form-field">
                         <label for="mail" class="form-label">Почта</label>
-                        <input type="email" name="mail" id="mail" class="form-input">
+                        <div class="form-wrapper">
+                            <input type="email" name="mail" id="mail" class="form-input">
+                            <svg class="form-icon" width="12px" height="12px">
+                                <use href="./images/icons.svg#icon-email-black"></use>
+                            </svg>
+                        </div>
                     </div>
                     <div class="form-field">
                         <label for="comment" class="form-label">Комментарий</label>
                         <textarea name="comment" id="comment" rows="8" placeholder="Введите текст"  class="comment"></textarea>
                     </div>
                     <div class="policy-field">
-                        <input type="checkbox" name="policy" id="policy" class="form-input">
+                        <input type="checkbox" name="policy" id="policy" class="form-input-checkbox">
                         <label for="policy" class="policy">Соглашаюсь с рассылкой и принимаю 
                             <a href="#" class="policy-link">Условия договора</a>
                         </label>
@@ -415,8 +430,11 @@
                         <label for="mail-footer" class="footer-form-label"></label>
                         <input type="email" name="mail" id="mail-footer" placeholder="E-mail" class="footer-form-input">
                     </div>
-                    <div>
+                    <div class="footer-button-wrapper">
                         <button type="submit" class="footer-form-button">Подписаться</button>
+                        <svg  class="footer-form-icon" width="24px" height="24px">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
                     </div>
                 </form>
             </div>
