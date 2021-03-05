@@ -687,28 +687,6 @@ body {
   border: 1px solid var(--accent-color);
 }
 
-.policy {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 30px;
-}
-
-.policy-field {
-  display: flex;
-  justify-content: center;
-
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-}
-
-.policy-link {
-  text-decoration: underline;
-
-  color: var(--accent-color);
-}
-
 .form-label {
   margin: 0;
   padding: 0;
@@ -757,6 +735,72 @@ body {
 
 .form-wrapper input {
   width: 100%;
+}
+
+.policy-field {
+  display: flex;
+  justify-content: center;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.policy {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  cursor: pointer;
+
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.policy-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+}
+
+.policy-icon use {
+  display: none;
+}
+
+/*скрываем checkbox браузера*/
+.policy-input {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*при выборе checkbox появляется иконка*/
+.policy-input:checked + .policy-icon use {
+  display: inline-block;
+}
+
+/*при выборе checkbox исчезает бордер*/
+.policy-input:checked + .policy-icon {
+  border: none;
+}
+
+.policy-link {
+  text-decoration: underline;
+
+  color: var(--accent-color);
 }
 
 /*не разрешает пользователю менять размер окна для сообщения*/
