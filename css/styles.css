@@ -811,6 +811,8 @@ body {
 /*кнопка формы*/
 .form-button {
   display: block;
+  cursor: pointer;
+
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
@@ -994,9 +996,9 @@ body {
 
 .footer-form-button {
   display: block;
+  cursor: pointer;
 
   padding: 0;
-  padding-left: 28px;
   padding-top: 10px;
   padding-bottom: 10px;
   min-width: 200px;
@@ -1013,14 +1015,15 @@ body {
   border-width: 0;
 }
 
-.footer-button-wrapper {
-  position: relative;
+.footer-form-icon {
+  margin-left: 10px;
 }
 
-.footer-form-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
+/*позиционирование контента кнопки*/
+.footer-button-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*позиционирование контента футера*/

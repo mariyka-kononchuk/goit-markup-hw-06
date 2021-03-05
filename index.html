@@ -328,7 +328,7 @@
                 <form class="js-speaker-form form">
                     <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
                     <div class="form-field">
-                        <label for="name" class="form-label">Имя</label>
+                        <label for="user-name" class="form-label">Имя</label>
                         <div class="form-wrapper">
                             <input type="text" name="user-name" id="name" class="form-input">
                             <svg class="form-icon" width="18px" height="18px">
@@ -434,12 +434,14 @@
                         <label for="mail-footer" class="footer-form-label"></label>
                         <input type="email" name="mail" id="mail-footer" placeholder="E-mail" class="footer-form-input">
                     </div>
-                    <div class="footer-button-wrapper">
-                        <button type="submit" class="footer-form-button">Подписаться</button>
-                        <svg  class="footer-form-icon" width="24px" height="24px">
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg>
-                    </div>
+                    <button type="submit" class="footer-form-button">
+                        <div class="footer-button-flex">
+                            <span>Подписаться</span>
+                            <svg class="footer-form-icon" width="24px" height="24px">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </div>
+                    </button>
                 </form>
             </div>
         </div>
