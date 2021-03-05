@@ -150,15 +150,11 @@ body {
 
 .site-nav a:hover {
   color: var(--accent-color);
-  outline: none;
 }
 
-/*тень при фокусе*/
 .site-nav a:focus {
-  outline: none;
   color: var(--accent-color);
-  box-shadow: 0 0 0 2px var(--accent-color);
-  border-radius: 4px;
+  outline: none;
 }
 
 /*подсветка активной страницы*/
@@ -798,6 +794,7 @@ body {
 }
 
 .policy-link {
+  margin-left: 4px;
   text-decoration: underline;
 
   color: var(--accent-color);
