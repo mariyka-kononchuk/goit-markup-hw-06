@@ -820,7 +820,7 @@ body {
   min-width: 136px;
 
   color: var(--white-color);
-  background-color: #188ce8;
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-family: Roboto, sans-serif;
@@ -830,6 +830,11 @@ body {
   letter-spacing: 0.06em;
 
   text-align: center;
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: #188ce8;
 }
 
 /*---ФУТЕР---*/
@@ -966,12 +971,6 @@ body {
 
 .footer-form {
   display: flex;
-}
-
-.footer-form-label {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 4px;
 }
 
 .footer-form-input {
@@ -1141,7 +1140,7 @@ body {
 .pfl-link:hover .pfl-text-overlay,
 .pfl-link:focus .pfl-text-overlay {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(-100%);
 }
 
 /*заголовки в списке портфолио*/
@@ -1182,7 +1181,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 0;
+  top: 100%;
   left: 0;
 
   width: 100%;
@@ -1198,5 +1197,5 @@ body {
   background-color: var(--accent-color-opacity);
   color: var(--white-color);
 
-  transform: translateY(100%);
+  transform: translateY(0);
 }
