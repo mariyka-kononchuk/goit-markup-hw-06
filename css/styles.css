@@ -741,6 +741,7 @@ body {
 .comment:focus {
   outline: none;
   border: 1px solid var(--accent-color);
+  caret-color: var(--accent-color);
 }
 
 /*соглашение на рассылку*/
